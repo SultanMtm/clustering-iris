@@ -35,11 +35,11 @@ Selanjutnya menguraikan seluruh variabel atau fitur pada data
 
 ### Variabel-variabel pada Global Video Game Sales adalah sebagai berikut:
 
-sepal_length    (Menunjukan nomor id Produk)    (float64)
-sepal_width       (Menunjukan harga Produk)    (float64)
-petal_length        (Menunjukan penjualan Produk)    (float64) 
-petal_width      (Menunjukan tinggi Produk)   (float64) 
-species   (Menunjukan resolusi Produk)    (object)
+- sepal_length    (Menunjukan nomor id Produk)    (float64)
+- sepal_width       (Menunjukan harga Produk)    (float64)
+- petal_length        (Menunjukan penjualan Produk)    (float64) 
+- petal_width      (Menunjukan tinggi Produk)   (float64) 
+- species   (Menunjukan resolusi Produk)    (object)
 
 ## Data Preparation
 
@@ -231,4 +231,3 @@ Klik link dibawah untuk membuka web
 
 ![Alt text](apk.png)
 
-##
