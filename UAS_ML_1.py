@@ -9,7 +9,8 @@ df = pd.read_csv('IRIS.csv')
 
 x = df.drop(['species'], axis = 1)
 
-st.header("isi dataset")
+st.header("Iris Flower")
+st.subheader("Isi dataset")
 st.write(x)
 
 #Menampilan elbow
@@ -45,7 +46,7 @@ def k_means(n_clust) :
                  verticalalignment='center',
                  size=20, weight='bold',
                  color='black')
-    st.header('Cluster Plot')
+    st.subheader('Cluster Plot')
     st.pyplot()
     st.write(x)
 k_means(clust)
