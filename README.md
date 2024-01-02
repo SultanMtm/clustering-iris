@@ -145,22 +145,26 @@ plt.show()
 sns.boxplot(x="species",y="petal_length",data=df)
 plt.show()
 ```
+melihat petal bunga apa yang paling panjang
 ![Alt text](eda_bp.png)
 
 ```bash
 plt.figure(figsize=(12,6))
 sns.histplot(data=df,x=df.sepal_length,bins=20)
 ```
+data panjang sepal dalam bentuk grafik
 ![Alt text](eda_hp.png)
 
 ```bash
 plt.figure(figsize=(12,6))
 sns.histplot(data=df,x=df.petal_width,bins=20)
 ```
+data lebar sepal dalam bentuk grafik
 ![Alt text](eda_hp2.png)
 
 ### Prepocessing
 
+disini kita hapus data species
 ```bash
 x = df.drop(['species'], axis = 1)
 ```
@@ -168,7 +172,7 @@ x = df.drop(['species'], axis = 1)
 ```bash
 print (x)
 ```
-
+kita akan memcari elbownya
 ```bash
 clusters = []
 for i in range(1, 10):
@@ -184,9 +188,11 @@ ax.set_ylabel('Inertia')
 plt.show()
 ```
 ![Alt text](elbow.png)
+disini kita telah menemukan elbownya yaitu 3
 
 ### Modelling
 
+disini kita akan mengcluster data atau mengelompokan data
 ```bash
 n_clust = 3
 kmean = KMeans(n_clusters=n_clust).fit(x)
@@ -211,6 +217,9 @@ plt.show()
 ```
 ![Alt text](clust.png)
 
+Data sudah berhasil kita clustering/kelompokkan.
+
+kita lihat data yang telah kita clustering
 ```bash
 print (x)
 ```
