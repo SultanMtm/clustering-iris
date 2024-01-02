@@ -33,7 +33,7 @@ Dataset = [Iris Flower](https://www.kaggle.com/datasets/arshid/iris-flower-datas
 
 Selanjutnya menguraikan seluruh variabel atau fitur pada data
 
-### Variabel-variabel pada Global Video Game Sales adalah sebagai berikut:
+### Variabel-variabel pada Bunga iris adalah sebagai berikut:
 
 - sepal_length    (Menunjukan nomor id Produk)    (float64)
 - sepal_width       (Menunjukan harga Produk)    (float64)
@@ -49,7 +49,7 @@ Pada tahap ini saya akan menunjukkan visualisasi data dan melakukan preprocessin
 
 Untuk data collection ini, saya mendapatkan dataset yang nantinya digunakan dari website kaggle.
 
-### import dataset
+### import liblary
 
 Pertama kita mengimport semua library yang dibutuhkan dan mendownload token kaggle akun kita,
 
@@ -61,6 +61,8 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 ```
 
+
+### import dataset
 Karena kita menggunakan google colab untuk mengerjakannya maka kita akan import files juga,
 
 ```bash
